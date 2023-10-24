@@ -59,10 +59,10 @@ function promptUser() {
             message: questions[7],
         },
         {
-            type: 'list',
+            type: 'checkbox',
             name: 'license',
             message: questions[8],
-            choices: ['Apache', 'GNU', 'MIT', 'BSD', 'Mozilla', 'Unlicense'],
+            choices: ['Apache', 'GNU', 'MIT', 'BSD', 'Mozilla', 'None'],
         },
     ])
     .then((response) =>{
