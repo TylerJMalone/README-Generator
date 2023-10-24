@@ -11,7 +11,7 @@ const questions = [
     'Enter a description of your project:',
     'Enter installation instructions:',
     'Enter usage information:',
-    'Enter contribution guidelines:',
+    'Enter contributorship information:',
     'Enter test instructions:',
     'Choose a license:',
 ];
