@@ -66,7 +66,7 @@ function promptUser() {
         },
     ])
     .then((response) =>{
-        writeToFile(generate(response));
+        writeToFile(generateMarkdown(response));
     });
 }
 
