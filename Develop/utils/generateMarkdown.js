@@ -1,22 +1,22 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license === 'Apache') {
+function renderLicenseBadge(licenseItem) {
+  if (licenseItem === 'Apache') {
     return 'https://img.shields.io/badge/License-Apache%202.0-blue.svg';
   }
-  if (license === 'GNU') {
+  if (licenseItem === 'GNU') {
     return 'https://img.shields.io/badge/License-GPLv3-blue.svg';
   }
-  if (license === 'MIT') {
+  if (licenseItem === 'MIT') {
     return 'https://img.shields.io/badge/License-MIT-yellow.svg';
   }
-  if (license === 'BSD') {
+  if (licenseItem === 'BSD') {
     return 'https://img.shields.io/badge/License-BSD%203--Clause-blue.svg';
   }
-  if (license === 'Mozilla') {
+  if (licenseItem === 'Mozilla') {
     return 'https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg';
   }
-  if (license === 'None') {
+  if (licenseItem === 'None') {
     return '';
   }
 }
@@ -24,23 +24,23 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license === 'Apache') {
+function renderLicenseLink(licenseItem) {
+  if (licenseItem === 'Apache') {
     return 'https://opensource.org/licenses/Apache-2.0';
   }
-  if (license === 'GNU') {
+  if (licenseItem === 'GNU') {
     return 'https://www.gnu.org/licenses/gpl-3.0';
   }
-  if (license === 'MIT') {
+  if (licenseItem === 'MIT') {
     return 'https://opensource.org/licenses/MIT';
   }
-  if (license === 'BSD') {
+  if (licenseItem === 'BSD') {
     return 'https://opensource.org/licenses/BSD-3-Clause';
   }
-  if (license === 'Mozilla') {
+  if (licenseItem === 'Mozilla') {
     return 'https://opensource.org/licenses/MPL-2.0';
   }
-  if (license === 'None') {
+  if (licenseItem === 'None') {
     return '';
   }
 }
@@ -67,7 +67,7 @@ function generateMarkdown(data) {
   ## Description
 
   ${data.description}
-  
+
 
   ## Table of Contents
 
